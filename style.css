@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Distressed&family=Rubik+Glitch&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    background-color: #e3e3e3;
+}
+
+header {
+    padding: 0 5% 0 5%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #100415;
+    font-family: "Rubik Distressed";
+    height: 23%;
+}
+
+#logo {
+    width: 70px;
+    flex: 1.5;
+}
+
+#title {
+    flex: 10;
+    text-align: center;
+    color: #a2a09f;
+    font-size: 70px;
+    letter-spacing: 5px;
+}
+
+#divButtons {
+    flex: 3;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnGame {
+    width: 46%;
+    background-color: #d842b0;
+    height: 60%;
+    border-radius: 10px;
+    transition: 0.5s;
+    font-family: "Rubik Distressed";
+    font-size: 25px;
+}
+
+.btnGame:hover {
+    cursor: not-allowed;
+    box-shadow: 10px 10px 20px #233aab;
+    transform: translate(0px, -15px);
+    background-color: #a20054;
+    color: white;
+    transition: 0.5s;
+}
+
+#logInUpContainer {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 11.4%;
+    justify-content: space-evenly;
+    align-items: top;
+    padding-top: 10px;
+}
+
+.logInUpbtn {
+    width: 46%;
+    text-align: center;
+    height: 100%;
+    border-radius: 10px;
+    font-family: "Rubik Glitch";
+    font-size: 50px;
+    background-color: #444fff;
+}
+
+.logInUpbtn:hover {
+    cursor: crosshair;
+    background-color: #a20054;
+    color: white;
+    transition: 0.5s;
+}
+
+footer {
+    height: 20%;
+    background-color: yellow;
+}
+
+#formContainer {
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logInForm,
+#signUpForm {
+    height: 40%;
+    padding: 30px;
+    width: 80%;
+    display: none;
+}
+
+#logInForm {
+    display: none;
+    grid-template-areas:
+        "userLa passwordLa submitbtn"
+        "userIn passwordIn submitbtn";
+    align-content: center;
+    grid-gap: 0 30px;
+}
+
+#logInForm * {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+#userNameLogIn {
+    grid-area: userIn;
+}
+
+#userNameLogInLabel {
+    grid-area: userLa;
+}
+
+#passwordLogInLabel {
+    grid-area: passwordLa;
+}
+
+#passwordLogIn {
+    grid-area: passwordIn;
+}
+
+#logInForm button {
+    grid-area: submitbtn;
+    height: 100%;
+}
