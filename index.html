@@ -1,56 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <title>Cortex Games</title>
-    </head>
-    <body>
-        <header>
-            <img
-                src="https://static.vecteezy.com/system/resources/previews/005/076/592/original/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg"
-                alt="logo" id="logo">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="headerStyle.css">
+    <link rel="stylesheet" href="btnColor.css">
+    <link rel="stylesheet" href="gameStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <audio id="audio" src="" style="display: none;"></audio>
+    <header>
+        <img
+            src="https://static.vecteezy.com/system/resources/previews/005/076/592/original/hacker-mascot-for-sports-and-esports-logo-free-vector.jpg"
+            alt="logo" id="logo">
             <h1 id="title">Cortex Gaming</h1>
             <div id="divButtons">
                 <button id="chess" class="btnGame">Chess</button>
                 <button id="frog" class="btnGame">Frog</button>
             </div>
         </header>
-
-        <div id="logInUpContainer">
-            <button id="logIn" class="logInUpbtn">Log In</button>
-            <button id="signUp" class="logInUpbtn">Sign Up</button>
+        <div id="containerOfSetUp">
+            <button id="reset">Reset game</button>
+            <button id="start">Start</button>
         </div>
-
-        <div id="formContainer">
-            <form action="#" id="logInForm">
-                <label for="userNameLogIn" id="userNameLogInLabel">User Name:</label>
-                <input type="text" id="userNameLogIn" name="userNameLogIn" required>
-                <label for="passwordLogIn" id="passwordLogInLabel">Password:</label>
-                <input type="password" id="passwordLogIn" name="passwordLogIn" required>
-                <button type="submit" id="logInSub">Log In</button>
-            </form>
-            <form action="#" id="singUpForm">
-                <label for="userNameSginUp" id="userNameSginUpLabel">Please enter the username</label>
-                <input type="text" id="userNameSginUp" name="userNameSginUp" required>
-                <label for="userFirstName" id="userFirstNameLabel">Please enter first name</label>
-                <input type="text" id="userFirstName" name="userFirstName" required>
-                <label for="userLastName" id="userLastNameLabel">Please enter last name</label>
-                <input type="text" id="userLastName" name="userFirstName" required>
-                <label for="userEmail" id="userEmailLabel">Please enter email adress</label>
-                <input type="text" id="userEmail" name="userEmail" required>
-                <label for="password" id="passwordLabel">Please enter password</label>
-                <input type="password" id="password" name="password" required>
-                <label for="passwordAuthentication" id="passwordAuthenticationLabe" required>Please authenticate password</label>
-                <input type="password" id="passwordAuthentication" name="passwordAuthentication" required>
-                <button type="submit" id="sginUpBtn" >Sgin Up</button>
-            </form>
+        <h2 id="askUser">What difficulty would you like to play?</h2>
+        <div id="difficultySettingsContainer">
+            <button id="easy" class="buttonDif">Easy</button>
+            <button id="moderate" class="buttonDif">Moderate</button>
+            <button id="challenging" class="buttonDif">Challenging</button>
         </div>
+    <div id="buttonContainer"></div>
+    <div id="score"></div>
 
-
-        <footer>sdifjldskfj</footer>
-        <script src="script.js"></script>
-    </body>
+    <script src="script2.js"></script>
+    
+</body>
 </html>

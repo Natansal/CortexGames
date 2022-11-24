@@ -1,0 +1,109 @@
+#difficultySettingsContainer {
+    display: flex;
+    background-color: black;
+    height: 75%;
+    /* width: 80%; */
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonDif {
+    width: 20%;
+    height: 20%;
+}
+
+#containerOfSetUp {
+    display: flex;
+    justify-content: space-around;
+}
+
+#reset {
+    display: none;
+    font-size: 20px;
+}
+
+#start {
+    display: none;
+    font-size: 20px;
+}
+
+#buttonContainer {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 65%;
+    padding-top: 20px;
+    background-color: black;
+}
+
+.btnStyle {
+    border: 2px solid rgb(62, 4, 4);
+    border-radius: 20px;
+}
+
+.btnStyle:hover {
+    transform: scale(1.1, 1.1);
+    transition: ease;
+}
+.btnStyle:active{
+    opacity: 0.6;
+    transform: scale(1.1,1.1);
+    background-color: wheat;
+}
+.computerBtn {
+    opacity: 0.6;
+    transform: scale(1.1,1.1);
+    /* animation-name: computerBtnAnimation; */
+    /* animation-duration: 0.8s; */
+}
+/* 
+.btnClicked {
+    animation-name: btnClickedAnimation;
+    animation-duration: 0.8s;
+} */
+
+/* @keyframes computerBtnAnimation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.8;
+        transform: scale(1.1, 1.1);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes btnClickedAnimation {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+} */
+#score{
+    width:100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
