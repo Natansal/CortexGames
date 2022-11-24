@@ -144,3 +144,75 @@ footer {
     grid-area: submitbtn;
     height: 100%;
 }
+
+
+
+#singUpForm{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    padding: 0 30%;
+}
+
+#singUpForm> *{
+    margin-bottom: 10px;
+}
+
+#userNameSginUpLabel{
+
+}
+
+#userNameSginUp{
+
+}
+
+#userFirstNameLabel{
+
+}
+
+#userFirstName{
+
+}
+
+#userLastNameLabel{
+
+}
+
+#userLastName{
+
+}
+
+#userEmailLabel{
+
+}
+
+#userEmail{
+
+}
+
+#passwordLabel{
+
+}
+
+#password{
+
+}
+
+#passwordAuthenticationLabe{
+
+}
+
+#passwordAuthentication{
+
+}
+
+
+
+
+
+
+
+
+
